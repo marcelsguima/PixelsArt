@@ -38,8 +38,6 @@
     height: 40px;
 }
 
-
-
-.selectedColor {
+.selected {
     background-color: magenta;
 }
