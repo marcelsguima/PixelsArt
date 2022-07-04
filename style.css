@@ -1,0 +1,44 @@
+#color-palette {
+    padding: 1px;
+}
+.color {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#color1 {
+    background-color: black;
+}
+#color2 {
+    background-color: blue;
+}
+#color3 {
+    background-color: red;
+}
+#color4 {
+    background-color: yellow;
+}
+
+/* Grid */
+
+#pixel-board{
+    display: grid  ;
+    grid-template-columns: repeat(5, 40px);
+    grid-template-rows: repeat(5, 40px);
+    margin-top: 10px;
+}
+
+.pixel{
+      border: 1px solid black;
+      width: 40px;
+      height: 40px;
+}
+
+
+
+.selectedColor {
+    background-color: magenta;
+}
