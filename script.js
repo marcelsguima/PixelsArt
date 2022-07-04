@@ -16,14 +16,13 @@ for(let i = 1; i < 5; i += 1){
     }
 }
 
-//Default Color
+// //Default Color
 
-window.onload = function () {
-    colorPalette[0].className += ' selected';
-  };
+// window.onload = function () {
+//     colorPalette[0].className += ' selected';
+//   };
 
 // //Select color
 
-// function selectColor(){
-//     for(let i = 0; )
-// }
+// pixel = document
+    
