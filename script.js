@@ -22,16 +22,8 @@ window.onload = function () {
     colorPalette[0].className += ' selected';
   };
 
-//Select color
+// //Select color
 
-function selectColor(){
-    let pixelAll = document.querySelectorAll('.pixel');
-    for(let i =0; i < pixelAll.length; i +=1){
-        pixelAll[i].addEventListener('click', (toPrint) => {
-        let nowColor = document.getElementsByClassName('selected');
-        let printColor = getComputedStyle(nowColor).backgroundColor;
-        toPrint.target.style.backgroundColor = nowColor;
-        });
-    }
-}
-window.addEventListener('click')
+// function selectColor(){
+//     for(let i = 0; )
+// }
