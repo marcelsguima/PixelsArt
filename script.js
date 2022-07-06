@@ -18,11 +18,39 @@ for(let i = 1; i < 5; i += 1){
 
 // //Default Color
 
-// window.onload = function () {
-//     colorPalette[0].className += ' selected';
-//   };
+
 
 // //Select color
 
-// pixel = document
-    
+let cores = document.querySelector('#color-palette').children;
+for(let i = 0;i < cores.length; i +=1){
+cores[i].addEventListener('click', seleciona); 
+
+// function logcor(){
+//   console.log("pl");
+// }
+// }
+
+
+function seleciona(){
+  removeClass();
+  selectedColor.classList.add('color');
+  selectedColor.classList.add('selected');
+    console.log(selectedColor);
+}
+
+function removeClass(){
+  let list = document.querySelector('#color-palette').children;
+  console.log(list);
+  for(let i = 0; i < list.length; i += 1){
+    for(let index = 0; index < list[i].classList.length; i += 1){
+      if (list[i].classList[index] === '.selected') {
+        list[i].classList.remove('.selected');
+        
+      }
+      if (list[i].classList[i] === '.selectedColor'){
+        (list[i].classList.remove[i] === '.selectedColor')
+      }
+    }
+  }
+}}

@@ -1,6 +1,9 @@
 #color-palette {
     padding: 1px;
 }
+.board-container{
+    padding: auto;
+}
 .color {
     display: inline-block;
     width: 50px;
@@ -26,6 +29,7 @@
 
 #pixel-board{
     display: grid  ;
+    padding: 0px;
     grid-template-columns: repeat(5, 40px);
     grid-template-rows: repeat(5, 40px);
     margin-top: 10px;
@@ -40,4 +44,8 @@
 
 .selected {
     background-color: magenta;
+}
+
+.selectedColor{
+    background-color: white;
 }
