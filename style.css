@@ -43,7 +43,7 @@
 }
 
 .selected {
-    background-color: magenta;
+    box-shadow: 1px 1px black;
 }
 
 .selectedColor{
