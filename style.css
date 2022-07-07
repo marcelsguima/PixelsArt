@@ -49,3 +49,7 @@
 .selectedColor{
     background-color: white;
 }
+
+#clear-board{
+    margin-top: 10px;
+}
