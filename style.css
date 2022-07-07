@@ -53,3 +53,10 @@
 #clear-board{
     margin-top: 10px;
 }
+
+.pixelCLear{
+    background-color: white;
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+}

@@ -32,9 +32,15 @@ function seleciona(event) {
 
 // Paint Pixel
 
-function pintaQuadro(event) {
-  event.target.classList.remove(event.target.classList[1]);
-  event.target.classList.add(findSelected[0].classList[1]);
+document.addEventListener('click', colorPixel);
+function colorPixel(event) {
+  if (event.target.classList.contains('pixel')) {
+    let corSelecionada = document.querySelector('.selected');
+    let cor = window
+      .getComputedStyle(corSelecionada)
+      .getPropertyValue('background-color');
+    event.target.style.backgroundColor = cor;
+  }
 }
 
 //Clear button
@@ -43,9 +49,7 @@ let botaoLimpa = document.getElementById('clear-board');
 botaoLimpa.addEventListener('click', limpa);
 
 function limpa() {
-  const pixelClass = document.getElementsByClassName('pixel');
-  for (let i = 0; i < pixelClass.length; i += 1) {
-    pixelClass[i].className = 'pixel';
-    pixelClass[i].addEventListener('click', pintaQuadro);
+  for (let i = 0; i < botaoLimpa.length; i += 1) {
+    botaoLimpa[i].style.backgroundColor = 'white';
   }
 }
