@@ -45,11 +45,12 @@ function colorPixel(event) {
 
 //Clear button
 
-let botaoLimpa = document.getElementById('clear-board');
-botaoLimpa.addEventListener('click', limpa);
+let button = document.getElementById('clear-board');
+button.addEventListener('click', btnLimpa);
 
-function limpa() {
-  for (let i = 0; i < botaoLimpa.length; i += 1) {
-    botaoLimpa[i].style.backgroundColor = 'white';
+let pnPixel = document.getElementsByClassName('pixel');
+function btnLimpa() {
+  for (let i = 0; i < pnPixel.length; i += 1) {
+    pnPixel[i].style.backgroundColor = 'white';
   }
 }
